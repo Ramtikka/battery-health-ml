@@ -91,6 +91,59 @@ SoH = (Current Capacity / Initial Capacity) × 100
 - Trained models saved using `joblib`
 - Processed datasets stored for future experiments
 
+## 🔋 State of Charge (SOC) Estimation
+
+The project was further extended to include Battery **State of Charge (SOC)** estimation using telemetry signals such as voltage, current, and temperature.
+
+### SOC Workflow
+- Extracted discharge cycle telemetry
+- Generated SOC approximation curves
+- Built SOC prediction models using XGBoost
+- Evaluated SOC prediction performance using regression metrics
+
+### SOC Visualizations
+
+#### Voltage vs SOC
+![Voltage vs SOC](assets/voltage_v_soc.png)
+
+#### Actual vs Predicted SOC
+![Predicted vs Actual SOC](assets/predicted_vs_actual_soc.png)
+
+---
+
+## 🌡️ Thermal Safety Analytics & Thermal Runaway Risk Monitoring
+
+To simulate real-world EV battery safety analytics, thermal monitoring and thermal runaway risk analysis modules were implemented.
+
+### Thermal Analytics Features
+- Temperature instability analysis
+- Thermal warning detection
+- High-risk battery cycle identification
+- Thermal runaway risk scoring
+
+---
+
+## 🚗 Extended EV Battery AI Platform
+
+The project evolved into a broader EV battery analytics platform including:
+
+- ✅ State of Health (SoH) Prediction
+- ✅ State of Charge (SOC) Estimation
+- ✅ Battery Anomaly Detection
+- ✅ Thermal Safety Monitoring
+- ✅ Thermal Runaway Risk Analytics
+- ✅ Predictive Maintenance Workflows
+
+---
+
+## 📌 Advanced Project Outcomes
+
+- Developed a multi-module EV battery analytics pipeline using NASA battery degradation datasets
+- Implemented both supervised and unsupervised machine learning workflows
+- Simulated industry-style battery monitoring and predictive maintenance systems
+- Built thermal risk monitoring and early warning analytics for battery safety applications
+- Extended the project toward Battery Management System (BMS) and automotive AI use cases
+
 ---
 
 ## 📈 Visualizations
@@ -133,6 +186,20 @@ SoH = (Current Capacity / Initial Capacity) × 100
 
 ### Temperature vs SoH Anomalies
 ![Temperature Battery Plot](assets/temp_battery_plot.png)
+
+### Thermal Monitoring Visualizations
+
+#### Thermal Risk Trend
+![Thermal Risk Trend](assets/thermal_risk_trend.png)
+
+#### Thermal Warning Detection
+![Thermal Warning Detection](assets/thermal_warning_detection.png)
+
+#### Thermal Runaway Risk Monitoring
+![Thermal Runaway Risk Monitoring](assets/thermal_runaway_risk_monitoring.png)
+
+#### High Risk Thermal Events
+![High Risk Events](assets/runaway_risk_event.png)
 
 ---
 
